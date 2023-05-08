@@ -1,0 +1,65 @@
+.event {
+  padding: 5rem 0;
+
+  &--frontend {
+    background-color: #442bdb;
+    background-image: linear-gradient(180deg, #442bdb 0%, #1b6ca7 100%);
+  }
+
+  &--ux-ui {
+    background-color: #1b6ca7;
+    background-image: linear-gradient(180deg, #1b6ca7 0%, #89223b 100%);
+  }
+
+  &--data-science {
+    background-color: #89223b;
+    background-image: linear-gradient(180deg, #89223b 0%, #9c791d 100%);
+  }
+
+  &--backend {
+    background-color: #9c791d;
+    background-image: linear-gradient(180deg, #9c791d 0%, #89223b 100%);
+  }
+
+  &--image-left {
+    .container {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .container {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  &__details {
+    &__title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    &__description {
+      line-height: 1.375rem;
+    }
+  }
+
+  &__image {
+    max-width: 360px;
+    width: 100%;
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      display: block;
+    }
+
+    &__details {
+      margin-bottom: 1rem;
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 @use "hero";
 @use "./components/infos-bar";
 @use "./components/buttons";
+@use "event";
 
 * {
   margin: 0;
@@ -9,6 +10,7 @@
   font-family: "Roboto", sans-serif;
   color: #fff;
   list-style: none;
+  overflow-x: hidden;
 }
 
 a {
