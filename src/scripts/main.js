@@ -1,7 +1,7 @@
 AOS.init();
 
 document.addEventListener("DOMContentLoaded", function () {
-  const eventDate = new Date("Apr 08, 2023 15:00:00").getTime();
+  const eventDate = new Date("Jun 08, 2023 15:00:00").getTime();
 
   const timeLeft = setInterval(function () {
     const now = new Date().getTime();
